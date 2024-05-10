@@ -43,20 +43,23 @@ int main(){
         scanf("%d",&b[i]);
     }
 
-    printf("array C is :- ");
-
-    int sizeC;
-    sizeC=sizeA+sizeB;
-    int c[sizeC];
-
-    for(int i=0;i<sizeC;i++){
-        sizeC=a[i],b[i];
-        printf("%d  ",c[i]);
+    printf("\n\narray C is :- ");
+     int z=0;
+     int sizeC[sizeA+sizeB];
+    
+    for(int i=0;i<sizeA;i++){
+        sizeC[z]= a[i];
+        z++;
+        
     }
-
- 
-
-
+    for(int i=0;i<sizeB;i++){
+        sizeC[z]=b[i];
+        z++;
+    }
+    for(int i=0;i<z;i++){
+        printf("%d ",sizeC[i]);
+    }
+   
     return 0;
     
 }

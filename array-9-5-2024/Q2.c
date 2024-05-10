@@ -8,12 +8,12 @@
 // Output:
 // The array is: 2020, 2024, 2028, 2032, 2036, 2040
 
-
 #include<stdio.h>
 int main(){
 
     int first_number;
     int second_number;
+ 
 
     printf("\n\nProgram is find leap years between two given numbers and store them in an array. And then print that array.\n\n");
 
@@ -23,9 +23,16 @@ int main(){
     scanf("%d",&second_number);
 
     printf("\n\nThe array is:-");
+
+    int array[100];
+       int x=0;
+    
     for(int i=first_number;i<=second_number;i++){
-        if(i%4==0){
-             printf("%d  ",i);
+        if(i%4==0)
+        {
+              array[x]=i;
+             printf("%d  ",array[x]);
+             x++;
         }
        
     }
