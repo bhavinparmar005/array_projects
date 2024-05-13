@@ -43,7 +43,8 @@ int main(){
         scanf("%d",&b[i]);
     }
 
-    printf("\n\narray C is :- ");
+    printf("\n\narray C is :- ");\
+    
      int z=0;
      int sizeC[sizeA+sizeB];
     
