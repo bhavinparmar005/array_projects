@@ -35,16 +35,8 @@ int main()
     }
     name_two[p] = '\0';
     
-    // printf("%s",name_two);
+    /
     int lenth_s=strlen(name_two);
-
-    // printf("\n'p' = %d.", p);
-
-    // printf("\nname_one = %d.\n", lenth);
-
-    // printf("name_two = %d.\n", lenth_s);
-
-    // printf("\nname_two = %s", name_two);
 
     int compare=strcmp(name_one,name_two);
     if(compare==0) {
